@@ -1,7 +1,5 @@
 # Realty List
 
-> Financial App is an app developed to help you control your expenses!.
-
 ![screenshot](./app/assets/images/screenshot.png)
 
 On access you will see 50 properties listed each with a cover photo.

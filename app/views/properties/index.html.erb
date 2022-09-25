@@ -1,14 +1,9 @@
-<p style="color: green"><%= notice %></p>
+<h1 class="bg-white text-center shadow-sm p-2">
+  <%= link_to "Properties", new_property_path %>
+</h1>
 
-<h1>Properties</h1>
-
-<div id="properties">
-  <% @properties.each do |property| %>
-    <%= render property %>
-    <p>
-      <%= link_to "Show this property", property %>
-    </p>
-  <% end %>
+<div id="properties" class="d-flex flex-wrap">
+  <%= render @properties %>
 </div>
 
-<%= link_to "New property", new_property_path %>
+<p style="color: green"><%= notice %></p>

@@ -27,6 +27,9 @@ RSpec.describe "/properties", type: :request do
       it "returns the correct items" do
         get_properties
         expect(JSON.parse(response.body, object_class: Property)).to eq(properties_list)
+        JSON.parse(response.body, object_class: Property).each do |property|
+          expect(property.photos).to be_attached
+        end
       end
     end
 
@@ -57,6 +60,7 @@ RSpec.describe "/properties", type: :request do
       it "returns the correct item" do
         get_property
         expect(JSON.parse(response.body, object_class: Property)).to eq(property)
+        expect(JSON.parse(response.body, object_class: Property).photos).to be_attached
       end
     end
 

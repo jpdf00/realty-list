@@ -1,48 +1,18 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Financial App
+# Realty List
 
 > Financial App is an app developed to help you control your expenses!.
 
-![screenshot](./app/assets/images/app_screenshot.png)
+![screenshot](./app/assets/images/screenshot.png)
 
-On your first access you will create your account.
-From there you will visit your profile and see 3 links:
-
-- All my expenses.
-  Here you can see all your categorized expenses and have a button to add new expenses.
-  You can also click on the expense and go to that expense page where you can.
-    - Edit this expense.
-    - Delete this expenses.
-    - Add a category to this expense.
-    - Remove a category from this expense.
-  Obs.: All newly added expenses don't have a category.
-
-- All my external expenses.
-  Here you can see all your uncategorized expenses and have a button to add new expenses.
-  You can also click on the expense and go to that expense page where you can.
-    - Edit this expense.
-    - Delete this expenses.
-    - Add a category to this expense.
-    - Remove a category from this expense.
-  Obs.: All newly added expenses don't have a category.
-
-- All categories.
-  Here you can see all your categories and have a button to add new categories.
-  You can also click on the category and go to that category page where you can.
-    - Edit this category.
-    - Delete this category.
-  Obs.: The icon has to be added as an URL to an image.
+On access you will see 50 properties listed each with a cover photo.
 
 
 ## Built With
 
-- Ruby 2.7.2
-- Rails 5.2.4.5
+- Ruby 3.1.2
+- Rails 7.0.4
 - Styled with:
   - Bootstrap 5.0
-- Authentication with:
-  - Devise
 - Tested with:
   - Rspec
   - Capybara
@@ -51,21 +21,16 @@ From there you will visit your profile and see 3 links:
 - Database with:
   - PostgreSQL 13
 
-## Live Demo
-
-[Financial App Live!](https://financial-app-jpdf00.herokuapp.com/)
-
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Ruby 2.7.2
-- Rails 5.2.4.5
+- Ruby 3.1.2
+- Rails 7.0.4
 - Yarn
-- PostgreSQL
+- PostgreSQL 13
 
 ### Setup
 
@@ -80,6 +45,7 @@ To get a local copy up and running follow these simple example steps.
 - On development: and on test: change the values of username: and password: to the username and password of your local postgres server.
 - On the terminal type `rails db:create`.
 - On the terminal type `rails db:migrate`.
+- On the terminal type `rails db:seed`.
 
 ### Usage
 
@@ -103,16 +69,9 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/jpdf00/financial-app/issues).
+Feel free to check the [issues page](https://github.com/jpdf00/realty-list/issues).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Design idea by [Gregoire Vella on Behance](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=)
-
-## 📝 License
-
-This project is [MIT](./LICENSE) licensed.

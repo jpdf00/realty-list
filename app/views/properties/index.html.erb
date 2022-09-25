@@ -1,0 +1,9 @@
+<h1 class="bg-white text-center shadow-sm p-2">
+  <%= link_to "Properties", new_property_path %>
+</h1>
+
+<div id="properties" class="d-flex flex-wrap">
+  <%= render @properties %>
+</div>
+
+<p style="color: green"><%= notice %></p>

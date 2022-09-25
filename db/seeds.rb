@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+50.times do |index|
+  property = Property.create!(name: Faker::Lorem.sentence(word_count: 3, supplemental: false, random_words_to_add: 0))
+
+    4.times do
+      num = rand(10)
+      property.photos.attach(io: File.open(Rails.root.join("app/assets/images/property_#{num}.jpg")), filename: "property_#{num}.jpg")
+    end
+end

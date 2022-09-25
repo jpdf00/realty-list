@@ -1,0 +1,9 @@
+<%= link_to property do %>
+  <div id="<%= dom_id property %>" class="card m-2 border-0 shadow-sm" style="width: 740px; height: 350px;">
+    <div class="card-img-top" style="background-image: url(<%= rails_blob_url(property.photos[2]) %>); width: 719px; height: 270px;"> </div>
+    <%#= image_tag property.photos[2], size: "300x200", class: 'card-img-top', style: "border: 1px solid red" %>
+    <div class="card-body">
+      <h5 class="card-title"><strong><%= property.name %></strong></h5>
+    </div>
+  </div>
+<% end %>
